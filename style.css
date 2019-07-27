@@ -5,18 +5,18 @@ body{
 .container {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 4fr auto 1fr;
+    grid-template-rows: auto 4fr auto 1fr;
 
 }
 /* green */
 
-ul{
+.main-nav{
     margin:0;
     display: flex;
     list-style: none;
 }
 li{
-    padding:1em;
+    padding:0.3em;
     font-size: 0.7em;
 }
 .spacer {
@@ -27,15 +27,22 @@ a{
     text-decoration: none;
     color:whitesmoke;
   }
+  
+.cover{
+    display: flex;
+    width: 10em;
+    justify-self: center;
+    align-self: center;
+}
 
 @media only screen and (max-width: 600px){
    
-    ul{
+    .main-nav{
         padding: 0;
+        height:100%;
     }
     li{
         font-size: 0.5em;
-        padding: 1em 0.3em;
     }
 }
   /* Cover */
@@ -44,6 +51,7 @@ a{
     justify-content: center;
     align-items: center;
 }
+
 /* grid */
 .grid-container {
    padding:.5em;
