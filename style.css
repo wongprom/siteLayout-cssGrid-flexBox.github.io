@@ -1,6 +1,7 @@
 /* My Code Starts Here */
 body{
     margin: auto 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .container {
     display: grid;
@@ -10,6 +11,11 @@ body{
 }
 /* green */
 
+.sticky{
+position: sticky;
+top:0;
+width: 100%;
+}
 .main-nav{
     margin:0;
     display: flex;
@@ -65,7 +71,13 @@ width:100%;
 background: #444;
 justify-self: center;
 text-align: center;
+}
 
+.box:hover {
+    -webkit-transform:rotate(-3deg);
+    -moz-transform:rotate(-3deg);
+    -o-transform:rotate(-3deg);
+    transform:rotate(-3deg);
 }
 /* footer */
 footer{
